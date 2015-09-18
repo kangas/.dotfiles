@@ -18,6 +18,10 @@ Then you will activate the .dotfiles by including the following line to ~/.bash_
 
 Borrowing the idea from https://github.com/kevinelliott/.dotfiles but I'm crafting mine from scratch.
 
+PS: Also highly recommended, from the same source!
+
+https://gist.github.com/kevinelliott/0726211d17020a6abc1f
+
 # Copyright
 
 Copyright © 2015 Matt Kangas
