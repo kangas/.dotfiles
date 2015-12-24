@@ -13,23 +13,24 @@ Then:
 
 OS X: append to ~/.bash_profile
 
-	source ~/.dotfiles/base.sh
+    source ~/.dotfiles/base.sh
 
-Linux: two steps
+Linux with GNOME: two steps
 
-1. append to ~/.bashrc
+1) append to ~/.bashrc
 
-  source ~/.dotfiles/base.sh
+    source ~/.dotfiles/base.sh
 
-2. create ~/.bash_profile
+2) create ~/.bash_profile
 
-  [ -f "$HOME/.profile" ] && source "$HOME/.profile"
-  [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
+    [ -f "$HOME/.profile" ] && source "$HOME/.profile"
+    [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
 
-Why the difference?
+Why two steps with GNOME?
 
 - OS X Terminal invokes bash as a login session by default
 - GNOME Terminal invokes bash as a non-login session by default
+  - .bash_profile, if present, prevents .profile from being loaded
 
 More about this: http://askubuntu.com/questions/132276/configure-gnome-terminal-to-start-bash-as-a-login-shell-doesnt-read-bashrc
 
