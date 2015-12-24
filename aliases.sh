@@ -1,2 +1,2 @@
-alias ls="ls -F"
-alias ll="ls -lF"
+alias ls="ls -F --color=auto"
+alias ll="ls -alF"
