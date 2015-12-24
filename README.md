@@ -1,6 +1,6 @@
 # .dotfiles
 
-Dotfiles for your unix-like system. I've created this little repository to setup my OSX development machine. You're free to clone this for your own use, or pull out items.
+Dotfiles for your unix-like system. I've created this little repository to set up my OS X and Linux development machines. You're free to clone this for your own use, or pull out items.
 
 # Install
 
@@ -9,10 +9,29 @@ To install, you will be cloning this repository into ~/.dotfiles.
 	cd ~
 	git clone git@github.com:kangas/.dotfiles.git
 
-Then you will activate the .dotfiles by including the following line to ~/.bash_profile
+Then:
+
+OS X: append to ~/.bash_profile
 
 	source ~/.dotfiles/base.sh
 
+Linux: two steps
+
+1. append to ~/.bashrc
+
+  source ~/.dotfiles/base.sh
+
+2. create ~/.bash_profile
+
+  [ -f "$HOME/.profile" ] && source "$HOME/.profile"
+  [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
+
+Why the difference?
+
+- OS X Terminal invokes bash as a login session by default
+- GNOME Terminal invokes bash as a non-login session by default
+
+More about this: http://askubuntu.com/questions/132276/configure-gnome-terminal-to-start-bash-as-a-login-shell-doesnt-read-bashrc
 
 # Credits
 
