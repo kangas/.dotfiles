@@ -9,3 +9,8 @@ source $DF_BASE_PATH/editor.sh
 source $DF_BASE_PATH/go.sh
 source $DF_BASE_PATH/m.sh
 source $DF_BASE_PATH/node.sh
+
+if ( grep -qE "Microsoft" /proc/version )
+then
+  source $DF_BASE_PATH/ssh_agent_windows.sh
+fi
