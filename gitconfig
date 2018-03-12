@@ -1,0 +1,15 @@
+# Symlink from ~/.gitconfig
+[user]
+	name = Matt Kangas
+	email = kangas@gmail.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	la = log --graph --oneline
+[push]
+	default = simple
+[merge]
+	ff = only
+
