@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Unused local branches:"
+git branch --merged master  | grep -v 'master'
+echo
+
+if [ "$1" = "-f" ]
+then
+  git branch --merged master  | grep -v 'master' | xargs -n 1 git branch -d
+fi
