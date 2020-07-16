@@ -8,6 +8,7 @@ source $DF_BASE_PATH/bash_history.sh
 source $DF_BASE_PATH/editor.sh
 source $DF_BASE_PATH/freedesktop.sh
 source $DF_BASE_PATH/go.sh
+source $DF_BASE_PATH/google_cloud.sh
 source $DF_BASE_PATH/m.sh
 source $DF_BASE_PATH/node.sh
 source $DF_BASE_PATH/python.sh
